@@ -1,0 +1,8 @@
+# Игнорировать всё внутри zed
+/zed/*
+
+# Но не игнорировать ключевые файлы и папку themes
+!zed/keymap.json
+!zed/settings.json
+!zed/themes/
+!zed/themes/**      # чтобы не игнорировать файлы внутри themes

@@ -1,0 +1,90 @@
+{
+    "show_edit_predictions": true,
+    "languages": {
+        "C++": {
+            "formatter": {
+                "external": {
+                    "command": "clang-format",
+                    "arguments": [
+                        "--style=file:/Users/nagraver/Documents/.clang-format",
+                        "--assume-filename={buffer_path}"
+                    ]
+                }
+            }
+        },
+        "C": {
+            "formatter": {
+                "external": {
+                    "command": "clang-format",
+                    "arguments": [
+                        "--style=file:/Users/nagraver/Documents/.clang-format",
+                        "--assume-filename={buffer_path}"
+                    ]
+                }
+            }
+        },
+        "Python": {
+            "formatter": {
+                "external": {
+                    "command": "/opt/homebrew/bin/black",
+                    "arguments": ["-", "--line-length", "120"]
+                }
+            }
+        }
+    },
+    "agent": {
+        "default_profile": "ask",
+        "dock": "right",
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-3-7-sonnet-latest"
+        }
+    },
+    "ssh_connections": [
+        {
+            "host": "95.181.167.192",
+            "username": "nagraver",
+            "projects": [
+                {
+                    "paths": ["/home/nagraver"]
+                }
+            ]
+        }
+    ],
+    "features": {
+        "edit_prediction_provider": "zed"
+    },
+    "edit_predictions": {
+        "mode": "subtle"
+    },
+    "git": {
+        "inline_blame": {
+            "enabled": false
+        }
+    },
+    "tabs": {
+        "activate_on_close": "left_neighbour",
+        "file_icons": true,
+        "git_status": true
+    },
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 100
+        }
+    },
+    "buffer_line_height": {
+        "custom": 1.95
+    },
+    "buffer_font_features": {
+        "calt": false // disable ligatures
+    },
+    "current_line_highlight": "gutter",
+    "icon_theme": "Catppuccin Mocha",
+    "theme": "One Dark Pro",
+    "tab_size": 4,
+    "ui_font_size": 18,
+    "ui_font_family": "Inter",
+    "buffer_font_size": 18,
+    "agent_font_size": 20,
+    "buffer_font_family": "Hack Nerd Font"
+}

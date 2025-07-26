@@ -23,6 +23,9 @@ git clone https://github.com/nagraver/dotfiles.git ~/.dotfiles
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/ghostty ~/.confin/ghostty
+ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
+ln -s ~/.dotfiles/zed ~/.config/
 ```
 
 
@@ -36,6 +39,9 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Then pass in the Brewfile location...
 brew bundle --file ~/.dotfiles/Brewfile
+
+# Use this to update Brewfile
+brew bundle dump --describe --force
 
 # ...or move to the directory first.
 cd ~/.dotfiles && brew bundle
